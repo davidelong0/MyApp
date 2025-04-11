@@ -1,29 +1,17 @@
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/Home'
-import Details from './components/Details'
-import NotFound from './components/NotFound'
-import CustomNavbar from './components/CustomNavbar';
+// App.jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import DetailsPage from "./components/DetailsPage";
 
 function App() {
-
-
   return (
-   
-      <BrowserRouter>
-      <div>
-      <CustomNavbar/>
+    <BrowserRouter>
       <Routes>
-        <Route path='/Home' element={<Home/>} />
-        <Route path='/details/:id' element={<Details/>} />
-        <Route path='*' element={<NotFound/>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/details/:city" element={<DetailsPage />} />
       </Routes>
-      </div>
-      </BrowserRouter>
-    
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

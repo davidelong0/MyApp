@@ -1,0 +1,275 @@
+
+.home-page {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://media.istockphoto.com/id/531889697/it/foto/concetto-di-tempo-previsione.jpg?s=612x612&w=0&k=20&c=rjZPG3TKWdnAAWPLakbTooMoIWzPlI-4MvwNCXF2ykE='); /* Immagine di sfondo */
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    color: #ecf0f1; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  
+  .hero-section {
+    min-height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  .hero-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px; 
+  }
+  
+  .search-input {
+    border-radius: 50px;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: none;
+    padding: 10px 20px;
+    max-width: 100%;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff; 
+    border-radius: 50px;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+  
+  .reviews-section {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 30px 0; 
+    color: white;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+  }
+  
+  .review-column {
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 350px;
+    margin-top: -80px; 
+    margin-left: 20px; 
+  }
+  
+  .weather-column{
+    margin-left: 20px!important;
+  }
+  .review-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px; 
+  }
+  
+  .review-item {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .stars {
+    color: #f5c518; 
+  }
+  
+  .info-section {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 30px 0;
+    color: white;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .footer {
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .dropdown-button {
+    border-radius: 50px;
+  }
+  
+  .dropdown-item {
+    cursor: pointer;
+  }
+  
+  button[type="submit"], .dropdown-item {
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .review-column {
+      max-width: 100%; 
+      margin-top: 0;
+      margin-left: 10px; 
+    }
+  
+    .review-item {
+      font-size: 0.9rem;
+    }
+  
+    .feature-title {
+      font-size: 1.2rem;
+    }
+  
+    .footer {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section h2 {
+      font-size: 1rem;
+    }
+  
+    .search-input {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  
+    button[type="submit"] {
+      padding: 8px 20px;
+      font-size: 1rem;
+    }
+  
+    .feature-title {
+      font-size: 1.1rem;
+    }
+  
+    .footer {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .review-column,
+    .weather-column,
+    .tools-column {
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+  
+  .tools-column {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 350px;
+    margin-left: 20px; 
+  }
+  
+  .tools-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .tools-column p {
+    font-size: 1rem;
+  }
+  
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  #map {
+    margin-top: 20px;
+    height: 300px;
+  }
+  
+  .weather-column {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 350px;
+  }
+
+  .alert-box{
+    background-color: rgba(183, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(194, 0, 0, 0.4);
+  }
+
+  h3 {
+    color: rgb(0, 98, 255)!important;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 06);
+  }
+
+
+  @keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
+  
+  #rainbow-text {
+    font-size: 2em;
+    font-weight: bold;
+    animation: rainbow 10s infinite; 
+  }
+  
